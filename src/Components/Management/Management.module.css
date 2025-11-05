@@ -1,0 +1,52 @@
+.managementSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 4rem 8%;
+  background-color: #f2ecf9; /* soft lavender from figma */
+  flex-wrap: wrap;
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.imageContainer img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.content h2 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #2a1f43;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .managementSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imageContainer {
+    justify-content: center;
+  }
+}

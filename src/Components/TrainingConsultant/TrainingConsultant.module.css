@@ -1,0 +1,80 @@
+
+.consultantSection {
+  background-color: #f7f3f6;
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #5a0b3f;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #9b1454;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.description {
+  color: #444;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.infoBox {
+  background-color: #5a0b3f;
+  border-radius: 8px;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px 40px;
+}
+
+.infoItem {
+  color: #fff;
+}
+
+.infoItem h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.infoItem p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.learnMore{
+  background-color: #5a0b3f;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.learnMore:hover {
+  background-color: #7a0f56;
+}
+
+
+
+

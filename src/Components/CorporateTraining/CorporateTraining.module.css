@@ -1,0 +1,68 @@
+.corporateTraining {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 8%;
+  background-color: #ffffff;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.content {
+  flex: 1;
+  max-width: 550px;
+}
+
+.content h2 {
+  font-size: 2rem;
+  color: #2a1f43; /* deep neutral tone */
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.content p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.content ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.content ul li {
+  margin-bottom: 0.5rem;
+  color: #5a2a83; /* soft purple tone from figma */
+  font-weight: 500;
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imageContainer img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .corporateTraining {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .imageContainer {
+    justify-content: center;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+}

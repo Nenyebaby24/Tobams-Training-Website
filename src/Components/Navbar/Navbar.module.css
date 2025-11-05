@@ -1,0 +1,155 @@
+.navbarContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* --- Top Bar --- */
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 3rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+.logo img {
+  height: 55px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+/* --- Right Side (Account + Assessment) --- */
+.topRight {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.accountDropdown {
+  position: relative;
+}
+
+.accountBtn {
+  background: #800080;
+  border: none;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 2.3rem;
+  right: 0;
+  background-color: p#fff;
+  list-style: none;
+  padding: 0.5rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  display: none;
+  z-index: 100;
+}
+
+.accountDropdown:hover .dropdownMenu {
+  display: block;
+}
+
+.dropdownMenu li {
+  padding: 0.5rem 1.2rem;
+}
+
+.dropdownMenu li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.dropdownMenu li a:hover {
+  color: #6a1b9a;
+}
+
+.assessmentBtn {
+  background-color: #ff0000;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.assessmentBtn:hover {
+  background-color: #ff0000;
+}
+
+/* --- Bottom Navbar --- */
+.bottomNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.navLinks li {
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  position: relative;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navLinks li:hover {
+  color: #6a1b9a;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  .topBar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .topRight {
+    margin-top: 0.6rem;
+    align-self: flex-end;
+  }
+
+  .navLinks {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+

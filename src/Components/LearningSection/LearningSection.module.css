@@ -1,0 +1,72 @@
+.learningSection {
+  background-color: #f3ecf6; /* Soft lavender background */
+  padding: 80px 10%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.imageContainer img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.textContainer {
+  flex: 1.2;
+  color: #2d2d2d;
+}
+
+.textContainer h2 {
+  color: #55215e; /* Purple heading */
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.textContainer p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.courseList ul {
+  list-style: disc;
+  columns: 2;
+  margin: 16px 0;
+  padding-left: 20px;
+}
+
+.courseList li {
+  margin-bottom: 6px;
+  color: #2d2d2d;
+}
+
+.learnMore {
+  background-color: #55215e; /* Deep purple button */
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.learnMore:hover {
+  background-color: #6a2b75; /* Slightly brighter purple on hover */
+}
+

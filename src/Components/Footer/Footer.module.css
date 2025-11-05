@@ -1,0 +1,239 @@
+.footer {
+  background-color: #301934; /* previous deep purple */
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* TOP CTA - slightly lighter purple */
+.ctaSection {
+  background-color: #3e0846b4; /* deep but subtle */
+  padding: 28px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.ctaContent h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.ctaContent h3 span {
+  display: block;
+  font-weight: 400;
+  opacity: 0.95;
+  margin-top: 6px;
+}
+
+.ctaButton {
+  background-color: #610a3d;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 300;
+  transition: background-color .2s ease;
+}
+
+.ctaButton:hover {
+  background-color: #7a1553;
+}
+
+/* MAIN ROW: brand (left) and link columns (right) */
+.mainRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 36px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* brand column on left */
+.brandCol {
+  flex: 0 0 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.footerLogo {
+  height: 56px;
+  object-fit: contain;
+}
+
+.brandText {
+  color: rgba(255,255,255,0.9);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* socials next to brand, inline under brand text */
+.socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.socials a {
+  color: #fff;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color .15s ease;
+}
+
+.socials a:hover { color: #9b1c67; }
+
+/* link columns area */
+.linksRow {
+  display: flex;
+  gap: 36px;
+  flex: 1 1 auto;
+  justify-content: flex-end;
+}
+
+.linkCol {
+  min-width: 160px;
+}
+
+.linkCol h4 {
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.linkCol ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkCol ul li {
+  color: rgba(255,255,255,0.88);
+  margin-bottom: 8px;
+  font-size: 0.93rem;
+  cursor: pointer;
+}
+
+.linkCol ul li:hover {
+  color: #fff;
+}
+
+/* TRANSPARENT INFO SECTION with vertical dividers */
+.infoSection {
+  background-color: rgba(255,255,255,0.04); /* light transparent box */
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 20px;
+  padding: 28px 40px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+/* each info item */
+.infoItem {
+  flex: 1 1 0;
+  padding: 0 24px;
+  text-align: left;
+  position: relative;
+}
+
+.infoItem h5 {
+  margin: 0 0 8px 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: red;
+}
+.contact h5{
+  color: rgba(255,255,255,0.95);
+}
+
+
+.infoItem p {
+  margin: 0;
+  font-size: 0.93rem;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.6;
+}
+
+.infoItem a {
+  color: rgba(255, 255, 255, 0.95);
+  text-decoration: none;
+}
+
+/* vertical divider element */
+.verticalDivider {
+  width: 1px;
+  background-color: rgba(255,255,255,0.18);
+  height: auto; /* will stretch with siblings */
+  align-self: stretch;
+  margin: 0;
+}
+
+/* shift Nigeria & Contact slightly right visually */
+.nigeria { padding-left: 28px; }
+.contact { padding-left: 28px; }
+
+/* bottom bar */
+.bottomBar {
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.bottomBar p {
+  margin: 0;
+  color: rgba(255,255,255,0.8);
+  font-size: 0.9rem;
+}
+
+.policyLinks a {
+  color: rgba(255,255,255,0.85);
+  margin-left: 18px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.policyLinks a:hover { color: #fff; }
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .mainRow { padding: 28px 28px; gap: 24px; }
+  .ctaSection { padding: 22px 28px; }
+  .linksRow { gap: 18px; }
+  .brandCol { flex: 0 0 260px; }
+}
+
+@media (max-width: 768px) {
+  .ctaSection { text-align: center; flex-direction: column; align-items: center; gap: 12px; }
+  .mainRow { flex-direction: column; align-items: center; padding: 22px 20px; }
+  .linksRow { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 18px; margin-top: 8px; }
+  .linkCol { min-width: 140px; text-align: center; }
+  .infoSection { flex-direction: column; gap: 18px; padding: 20px; }
+  .verticalDivider { display: none; }
+  .bottomBar { flex-direction: column; gap: 12px; text-align: center; padding: 18px 20px; }
+}
+
+
+
+
+
