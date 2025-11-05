@@ -3,6 +3,10 @@
   padding: 4rem 1rem;
   background: #5b0047;
   color: white;
+  width: 60%;       /* make it narrower */
+  margin: 0 auto;   /* keep it centered */
+  border-radius: 10px;
+  
 }
 
 .cta button {

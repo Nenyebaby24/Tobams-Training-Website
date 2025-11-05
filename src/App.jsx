@@ -6,6 +6,7 @@ import Hero from "./Components/Hero/Hero";
 import Testimonials from "./Components/Testimonials/Testimonials";
 import Footer from "./Components/Footer/Footer";
 
+import ConsultationCTA from "./Components/ConsultationCTA/ConsultationCTA";
 import LearningSection from "./Components/LearningSection/LearningSection";
 import CorporateTraining from "./Components/CorporateTraining/CorporateTraining";
 import IndividualTraining from "./Components/IndividualTraining/IndividualTraining";
@@ -48,6 +49,9 @@ function App() {
         <TransformationHub image={hub} />
         <TrainingConsultant />
       </Element>
+
+      {/* Consultation Call to Action */}
+      <ConsultationCTA />
 
       {/* Testimonials */}
       <Element name="testimonials">
