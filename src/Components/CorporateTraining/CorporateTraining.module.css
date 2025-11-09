@@ -28,14 +28,15 @@
 }
 
 .content ul {
-  list-style-type: disc;
+  list-style-type: "⚡";
   padding-left: 1.5rem;
+  color: #000000;
 }
 
 .content ul li {
   margin-bottom: 0.5rem;
-  color: #5a2a83; /* soft purple tone from figma */
-  font-weight: 500;
+  color: #000000; /* soft purple tone from figma */
+ 
 }
 
 .imageContainer {

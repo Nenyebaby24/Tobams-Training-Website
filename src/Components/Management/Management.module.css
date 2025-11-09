@@ -1,52 +1,161 @@
+/* Outer section background (page) */
 .managementSection {
+  background-color: #f8f5f9;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* The single purple rounded container that holds both image and content */
+.purpleBox {
+  width: 100%;
+  max-width: 1100px;
+  background-color: #4b0b38; /* deep purple */
+  border-radius: 14px;
+  padding: 26px;
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Left column: image inside white card */
+.imageWrap {
+  flex: 0 0 40%; /* keep it slightly narrower than text block */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageCard {
+  background: transparent;
+  border-radius: 3px;
+  padding: 6px;
+  width: 100%;
+  height: 160%; /* slightly taller than text section */
+  max-width: 400px; /* narrower box for portrait-like look */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+ 
+}
+
+.imageCard img { 
+  width: 150%;
+  height: 150%;
+  object-fit: cover; /* fills nicely, like in your screenshot */
+  border-radius: 10px;
+  display: block;
+}
+
+
+
+/* Right column: content */
+.content {
+  flex: 1 1 56%;
+  color: #fff;
+}
+
+.title {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.lead {
+  color: rgba(255,255,255,0.95);
+  margin: 0 0 10px 0;
+  line-height: 1.45;
+  font-size: 14.5px;
+}
+
+.desc {
+  color: rgba(255,255,255,0.9);
+  margin: 0 0 18px 0;
+  line-height: 1.6;
+  font-size: 13.5px;
+}
+
+/* Feature list container (vertical stack inside purple box) */
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 6px;
+}
+
+/* Each feature row: light purple rounded bar with a white rounded pill bullet at left */
+.featureRow {
+  
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 4rem;
-  padding: 4rem 8%;
-  background-color: #f2ecf9; /* soft lavender from figma */
-  flex-wrap: wrap;
+  gap: 14px;
+  background-color: #B784A7; /* subtle lighter bar */
+  padding: 10px 14px;
+  border-radius: 8px;
 }
 
-.imageContainer {
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
+.bullet {
+ color: #ffffff; /* white lightning on purple background */
+  font-size: 1.1rem;
+  margin-right: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transform: rotate(-10deg); /* adds a bit of energy like a real bolt */
 }
 
-.imageContainer img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 10px;
-}
-
-.content {
-  flex: 1;
-  max-width: 600px;
-}
-
-.content h2 {
-  font-size: 1.9rem;
+/* Feature text */
+.featureText {
+  color: #fff;
   font-weight: 600;
-  color: #2a1f43;
-  margin-bottom: 1rem;
+  font-size: 14px;
 }
 
-.content p {
-  font-size: 1rem;
-  color: #333;
-  line-height: 1.7;
-  margin-bottom: 1rem;
-}
-
-/* Responsive */
+/* Responsive: on narrow screens stack vertically, keep proportions */
 @media (max-width: 900px) {
-  .managementSection {
+  .purpleBox {
     flex-direction: column;
-    text-align: center;
+    padding: 20px;
   }
 
-  .imageContainer {
+  .imageWrap {
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
     justify-content: center;
   }
+
+  .imageCard {
+    max-width: 520px;
+    width: 90%;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .featureRow {
+    padding: 12px;
+  }
+
+  .bullet {
+    width: 22px;
+    height: 8px;
+  }
 }
+
+@media (max-width: 420px) {
+  .title { font-size: 18px; }
+  .lead, .desc, .featureText { font-size: 13px; }
+  .bullet { width: 18px; height: 8px; }
+}
+
+
+
+
+

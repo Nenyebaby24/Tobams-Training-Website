@@ -1,89 +1,170 @@
-.hubSection {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #fdeef2; /* soft pink background */
-  padding: 4rem 8%;
-  flex-wrap: wrap;
-  border-radius: 10px;
-}
+/* Transformation Hub Section - Pixel Perfect Styling */
 
-.content {
-  flex: 1;
-  max-width: 600px;
-}
-
-.content h3 {
-  font-size: 1rem;
-  color: #b94b6f;
-  margin-bottom: 0.4rem;
-  font-weight: 500;
-}
-
-.content h2 {
-  font-size: 1.9rem;
-  color: #2a1f43;
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-.content p {
-  color: #333;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-}
-
-.skillsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 0.8rem;
-  margin-bottom: 1.5rem;
-}
-
-.skillsGrid div {
-  background: #fff;
-  border-radius: 8px;
-  padding: 0.8rem 1rem;
-  color: #2a1f43;
-  font-weight: 500;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-}
-
-.learnBtn {
-  background: #520c61;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 0.9rem 1.6rem;
-  cursor: pointer;
-  font-weight: 500;
-}
-
-.learnBtn:hover {
-  background: #432a68;
-}
-
-.imageContainer {
-  flex: 1;
+.transformationSection {
+  background-color: #fbe4ea; /* Soft pink from Figma */
+  padding: 64px 15%;
   display: flex;
   justify-content: center;
 }
 
-.imageContainer img {
+.container {
+  max-width: 1440px;
   width: 100%;
-  max-width: 480px;
-  border-radius: 10px;
-  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .hubSection {
-    flex-direction: column-reverse;
+/* ===== Header Text Section ===== */
+.headerText {
+  text-align: left;
+  max-width: 1000px;
+}
+
+.subheading {
+  color: #2b4c9e; /* Blue accent for "Learning with our CEO" */
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.title {
+  color: #351330; /* Dark purple heading */
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.description {
+  color: #3c3c3c;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* ===== Content Section ===== */
+.content {
+  display: flex;
+  gap: 40px;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.imageBox {
+  flex: 1; 
+  display: flex;
+  
+  
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  
+}
+
+.infoBox {
+  flex: 1;
+  background-color: rgba(241, 235, 235, 0.986);
+  border-radius: 14px;
+  padding: 32px 28px;
+  box-shadow: 0 4px 14px rgba(194, 179, 179, 0.233);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.infoItems {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 24px;
+  margin-bottom: 20px;
+  grid-auto-rows: 1fr; /* ✅ Forces all grid items to equal height */
+}
+
+.infoItems span {
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 14px 16px; /* slightly more padding for balance */
+  font-size: 0.92rem;
+  color: #351330;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 100%; /* ✅ Fills the full grid row height */
+  box-sizing: border-box;
+}
+
+/* ===== Learn More Button ===== */
+.learnMore {
+  background-color: #6c1544;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  align-self: flex-start;
+}
+
+.learnMore:hover {
+  background-color: #530f35;
+}
+
+/* ===== Responsive Design ===== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .title {
+    font-size: 1.6rem;
+  }
+  .content {
+    gap: 28px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .transformationSection {
+    padding: 48px 20px;
+  }
+
+  .headerText {
     text-align: center;
   }
 
-  .imageContainer {
-    margin-bottom: 2rem;
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+
+  .image {
+    max-width: 340px;
+  }
+
+  .infoBox {
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+    padding: 24px 20px;
+  }
+
+  .infoItems {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .learnMore {
+    align-self: center;
   }
 }
+
