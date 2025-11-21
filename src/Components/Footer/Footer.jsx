@@ -6,7 +6,7 @@ import {
   FaFacebookF,
   FaInstagram,
   FaYoutube,
-} from "react-icons/fa";
+} from "react-icons/fa6";
 import styles from "./Footer.module.css";
 import logo from "../../Logosrc/logo.png";
 
