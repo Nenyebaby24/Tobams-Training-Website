@@ -24,6 +24,21 @@ import hub from "./assets/hub.jpg";
 function App() {
   return (
     <>
+      {/* BACK TO PORTFOLIO BUTTON */}
+      <a
+        href="https://your-portfolio-url.com" // <-- replace with your actual portfolio URL
+        style={{
+          display: "inline-block",
+          margin: "20px",
+          fontSize: "18px",
+          fontWeight: "bold",
+          textDecoration: "none",
+          color: "#333",
+        }}
+      >
+        ← Back to Portfolio
+      </a>
+
       <Navbar />
 
       {/* Hero Section */}
@@ -36,7 +51,7 @@ function App() {
         <LearningSection />
       </Element>
 
-      {/* Jobs Section (example: training-related content) */}
+      {/* Jobs Section */}
       <Element name="jobs">
         <CorporateTraining image={corporate} />
         <IndividualTraining image={individual} />
@@ -64,3 +79,4 @@ function App() {
 }
 
 export default App;
+
