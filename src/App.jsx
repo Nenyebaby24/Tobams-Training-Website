@@ -26,7 +26,7 @@ function App() {
     <>
       {/* BACK TO PORTFOLIO BUTTON */}
       <a
-        href="https://your-portfolio-url.com" // <-- replace with your actual portfolio URL
+        href="https://portfolio-ten-virid-57.vercel.app/" // <-- replace with your actual portfolio URL
         style={{
           display: "inline-block",
           margin: "20px",
